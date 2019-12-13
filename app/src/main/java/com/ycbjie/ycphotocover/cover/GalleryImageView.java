@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.yc.cn.cover.CoverLayoutManger;
-import com.yc.cn.cover.RecyclerCoverFlow;
+import com.yc.cn.cover.CoverRecyclerView;
 import com.ycbjie.ycphotocover.R;
 
 import java.util.ArrayList;
@@ -36,7 +36,7 @@ public class GalleryImageView extends LinearLayout {
     private int thumbnailSize;
     private int thumbnailHeightSize;
     private GalleryViewPager viewPager;
-    private RecyclerCoverFlow recyclerView;
+    private CoverRecyclerView recyclerView;
     private int position = 0;
 
     public GalleryImageView(Context context, AttributeSet attrs) {
