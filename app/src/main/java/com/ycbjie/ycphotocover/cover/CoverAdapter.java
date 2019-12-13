@@ -1,4 +1,4 @@
-package com.yc.cn.cover;
+package com.ycbjie.ycphotocover.cover;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.ycbjie.photocoverlib.R;
+import com.ycbjie.ycphotocover.R;
 
 import java.util.List;
 

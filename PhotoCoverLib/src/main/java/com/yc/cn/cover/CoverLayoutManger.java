@@ -186,6 +186,7 @@ public class CoverLayoutManger extends RecyclerView.LayoutManager {
             Rect rect = getFrame(position);
             if (!Rect.intersects(displayFrame, rect)) {
                 //Item没有在显示区域，就说明需要回收
+                assert child != null;
                 removeAndRecycleView(child, recycler);
                 //回收滑出屏幕的View
                 mHasAttachedItems.delete(position);

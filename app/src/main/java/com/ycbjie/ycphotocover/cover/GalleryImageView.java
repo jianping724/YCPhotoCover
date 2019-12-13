@@ -1,4 +1,4 @@
-package com.yc.cn.cover;
+package com.ycbjie.ycphotocover.cover;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;
@@ -7,7 +7,10 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
-import com.ycbjie.photocoverlib.R;
+
+import com.yc.cn.cover.CoverLayoutManger;
+import com.yc.cn.cover.RecyclerCoverFlow;
+import com.ycbjie.ycphotocover.R;
 
 import java.util.ArrayList;
 import java.util.List;

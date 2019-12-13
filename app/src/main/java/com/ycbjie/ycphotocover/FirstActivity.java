@@ -5,9 +5,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
-import com.yc.cn.cover.GalleryImageView;
+import com.ycbjie.ycphotocover.cover.GalleryImageView;
 
 import java.util.ArrayList;
 import java.util.List;

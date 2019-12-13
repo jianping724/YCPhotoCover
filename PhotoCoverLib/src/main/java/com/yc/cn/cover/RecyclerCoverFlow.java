@@ -48,6 +48,12 @@ public class RecyclerCoverFlow extends RecyclerView {
                     case RecyclerView.SCROLL_STATE_IDLE:
                         //滚动停止时
                         break;
+                    case RecyclerView.SCROLL_STATE_DRAGGING:
+
+                        break;
+                    case RecyclerView.SCROLL_STATE_SETTLING:
+
+                        break;
                     default:
                         break;
                 }
@@ -155,7 +161,12 @@ public class RecyclerCoverFlow extends RecyclerView {
      * 获取被选中的Item位置
      */
     public int getSelectedPos() {
-        return getCoverFlowLayout().getSelectedPos();
+        CoverLayoutManger coverFlowLayout = getCoverFlowLayout();
+        if (coverFlowLayout!=null){
+            int selectedPos = getCoverFlowLayout().getSelectedPos();
+            return selectedPos;
+        }
+        return 0;
     }
 
     /**
@@ -163,7 +174,9 @@ public class RecyclerCoverFlow extends RecyclerView {
      * @param l 监听接口
      */
     public void setOnItemSelectedListener(CoverLayoutManger.OnSelected l) {
-        getCoverFlowLayout().setOnSelectedListener(l);
+        if (getCoverFlowLayout()!=null){
+            getCoverFlowLayout().setOnSelectedListener(l);
+        }
     }
 
     @Override

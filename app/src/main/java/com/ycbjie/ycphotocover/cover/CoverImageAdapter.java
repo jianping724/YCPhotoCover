@@ -1,4 +1,4 @@
-package com.yc.cn.cover;
+package com.ycbjie.ycphotocover.cover;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
